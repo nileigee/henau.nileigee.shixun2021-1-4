@@ -88,6 +88,12 @@
             <artifactId>spring-tx</artifactId>
             <version>5.0.5.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>com.henau.nileigee</groupId>
+            <artifactId>projoProject</artifactId>
+            <version>3.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

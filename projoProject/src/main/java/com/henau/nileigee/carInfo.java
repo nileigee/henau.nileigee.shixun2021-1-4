@@ -13,6 +13,7 @@ public class carInfo {
     private int provinceId;
     private int cityId;
     private int countyId;
+    private int fleetId;
 
     public carInfo() {
     }
@@ -29,6 +30,29 @@ public class carInfo {
         this.provinceId = provinceId;
         this.cityId = cityId;
         this.countyId = countyId;
+    }
+
+    public carInfo(int carId, String carName, String carColor, String carType, int belongCompany, int seatNum, String carStatus, int carMasterId, int provinceId, int cityId, int countyId, int fleetId) {
+        this.carId = carId;
+        this.carName = carName;
+        this.carColor = carColor;
+        this.carType = carType;
+        this.belongCompany = belongCompany;
+        this.seatNum = seatNum;
+        this.carStatus = carStatus;
+        this.carMasterId = carMasterId;
+        this.provinceId = provinceId;
+        this.cityId = cityId;
+        this.countyId = countyId;
+        this.fleetId = fleetId;
+    }
+
+    public int getFleetId() {
+        return fleetId;
+    }
+
+    public void setFleetId(int fleetId) {
+        this.fleetId = fleetId;
     }
 
     public int getCarId() {
@@ -156,6 +180,7 @@ public class carInfo {
                 ", provinceId=" + provinceId +
                 ", cityId=" + cityId +
                 ", countyId=" + countyId +
+                ", fleetId=" + fleetId +
                 '}';
     }
 }
