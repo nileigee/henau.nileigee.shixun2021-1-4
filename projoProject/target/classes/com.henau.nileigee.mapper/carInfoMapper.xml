@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--映射文件-->
+<mapper namespace="carInfoMapper">
+    <!--id="queryAllCar"这是查询方法，resultType="com.henau.nileigee.carInfo"这是查询结果封装的实体类的位置-->
+    <!--查询操作-->
+    <select id="queryAllCar" resultType="carInfo">
+        select * from carinfo
+    </select>
+
+
+    <!--插入操作-->
+    <!--parameterType,传入要插入操作的类型的，#{实体的属性名}-->
+    <insert id="addCar" parameterType="carInfo">
+        insert  into carinfo values (#{carId},#{carName},#{carColor},#{carType},#{belongCompany},#{seatNum},#{carStatus},#{carMasterId},#{provinceId},#{cityId},#{countyId},#{fleetId})
+    </insert>
+
+    <!--修改操作-->
+    <update id="update" parameterType="carInfo">
+        update carinfo set seatNum=#{seatNum},carStatus=#{carStatus} where carId=#{carId}
+    </update>
+
+    <!--删除操作-->
+    <delete id="delCar" parameterType="java.lang.Integer">
+        delete from carinfo where carId=#{carId}
+    </delete>
+</mapper>

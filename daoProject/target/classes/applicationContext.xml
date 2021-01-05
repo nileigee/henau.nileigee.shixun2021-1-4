@@ -20,7 +20,5 @@
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
-    <bean id="carInfoDao" class="com.henau.nileigee.impl.carInfoDaoImpl">
-        <property name="jdbcTemplate" ref="jdbcTemplate"/>
-    </bean>
+    <!--<bean id="carInfoMapper" class="com.henau.nileigee.dao.impl.carInfoMapperImpl"></bean>-->
 </beans>

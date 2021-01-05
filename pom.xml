@@ -10,6 +10,7 @@
     <modules>
         <module>projoProject</module>
         <module>daoProject</module>
+        <module>serviceProject</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -124,6 +125,10 @@
         <artifactId>jstl</artifactId>
         <version>1.2</version>
     </dependency>
-
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.6</version>
+        </dependency>
 </dependencies>
 </project>
